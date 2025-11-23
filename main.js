@@ -1,4 +1,4 @@
-const correctAnswer = "a";
+const correctAnswer = "30 march";
 const btn = document.getElementById("checkBtn");
 const input = document.getElementById("secretInput");
 const success = document.getElementById("successMsg");
