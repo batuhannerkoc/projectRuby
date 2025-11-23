@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="outer-browser">
+  <div class="browser-topbar">
+    <span class="red"></span>
+    <span class="yellow"></span>
+    <span class="green"></span>
+    <div class="browser-title">our-memories.html</div>
+  </div>
+
+  <img src="/images/cats.png" alt="cats" class="cats" id="cats">
+
+  <div class="sparkler" id="sparkler"></div>
+
+  <div class="content-box">
+    <p>hi baby, do you remember the date we started dating?</p>
+    <input type="text" id="secretInput" placeholder="Type here...">
+    <button id="checkBtn">✔️</button>
+    <p class="success-message" id="successMsg">Correct! 💖</p>
+  </div>
+
+  <div class="timeline" id="timeline" style="display:none;">
+    <div class="event" onclick="showNoteDialog('My birthday! the first ever photo of yours in my gallery 💌')" style="position:relative;">
+      <img src="/images/foto1.png" alt="Memory 1" class="event-img">
+      <p>💖 30.03.2025 The first day we took a photo!</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('Thank god he didnt come, its also the first day i kissed you, i still think about it time to time hehehe 🎊')" style="position:relative;">
+      <img src="/images/foto30.png" alt="Memory 2" class="event-img">
+      <p>🎉 31.03.2025 First McDonalds without diego </p>
+    </div>
+    <div class="event" onclick="showNoteDialog('tap tap day special 💝')" style="position:relative;">
+      <img src="/images/foto29.png" alt="Memory 3" class="event-img">
+      <p>🌸 02.04.2025 im at at your place!!!!!</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('today u looked hotter than every girl i saw tbh 💝')" style="position:relative;">
+      <img src="/images/foto27.png" alt="Memory 3" class="event-img">
+      <p>💖 The legendary mirror selfie</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('kiss kiss mwwwwah 💝')" style="position:relative;">
+      <img src="/images/foto26.png" alt="Memory 3" class="event-img">
+      <p>🎉 first photo of us kissing!!!!!</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('roses are red violets are blue i love u and i wanna fuck u tooooooo 💝')" style="position:relative;">
+      <img src="/images/foto25.png" alt="Memory 3" class="event-img">
+      <p>🌸 pretty little baby's flower day</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('big old mortelle 💝')" style="position:relative;">
+      <img src="/images/foto22.png" alt="Memory 3" class="event-img">
+      <p>💖 say cheese to the camera</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('30 nuggets combo 💝')" style="position:relative;">
+      <img src="/images/foto20.png" alt="Memory 3" class="event-img">
+      <p>🎉 MC NUGGETTSSS</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('eros was kinda dumb that day 💝')" style="position:relative;">
+      <img src="/images/foto19.png" alt="Memory 3" class="event-img">
+      <p>🌸 bbq at the old place</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('when i put da durag i feel a negro 💝')" style="position:relative;">
+      <img src="/images/foto18.png" alt="Memory 3" class="event-img">
+      <p>💖 durag babyboy</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('the eyes chico, they never lie 💝')" style="position:relative;">
+      <img src="/images/foto17.png" alt="Memory 3" class="event-img">
+      <p>🎉 pretty eyes...</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('i dont fall with skate but i do fall for u often 💝')" style="position:relative;">
+      <img src="/images/foto16.png" alt="Memory 3" class="event-img">
+      <p>🌸 skating dayyy</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('hey babygurl, r u a mcnugget cuz i wanna eat u 💝')" style="position:relative;">
+      <img src="/images/foto15.png" alt="Memory 3" class="event-img">
+      <p>💖 mcdonalds... again...</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('IM SO IN LUV WITH UUUU UUU  💝')" style="position:relative;">
+      <img src="/images/foto14.png" alt="Memory 3" class="event-img">
+      <p>🌸 PRETTY LITTLE BABYY YAA YAA</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('MY BUNNY WAS BORN TODAYY 💝')" style="position:relative;">
+      <img src="/images/foto12.png" alt="Memory 3" class="event-img">
+      <p>🎉 BIRTHDAY GIRL!!!!!!!</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('i dont wanna leave u 💝')" style="position:relative;">
+      <img src="/images/foto10.png" alt="Memory 3" class="event-img">
+      <p>💖 im going back to turkey... sad</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('i still cant believe eros injured himself like dat 💝')" style="position:relative;">
+      <img src="/images/foto9.png" alt="Memory 3" class="event-img">
+      <p>🌸 disabled guy home visit</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('i still cannot get used to how pretty you are 💝')" style="position:relative;">
+      <img src="/images/foto8.png" alt="Memory 3" class="event-img">
+      <p>🎉 this is one of my favorite photos</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('that pizza was crazy good 💝')" style="position:relative;">
+      <img src="/images/foto7.png" alt="Memory 3" class="event-img">
+      <p>💖 DINNNERRR TOGETHER</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('you made me enter the sea at midnight...')" style="position:relative;">
+      <img src="/images/foto6.png" alt="Memory 3" class="event-img">
+      <p>🌸 the bbq at the beach</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('u cant even believe how sleepy and comfy i am when u hug me 💝')" style="position:relative;">
+      <img src="/images/foto5.png" alt="Memory 3" class="event-img">
+      <p>🎉 eeppy sleepy</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('you dont like it but i love this photos.. 💝')" style="position:relative;">
+      <img src="/images/foto4.png" alt="Memory 3" class="event-img">
+      <p>💖 TAORMINAAA</p>
+    </div>
+    <div class="event" onclick="showNoteDialog('we do look sexy here dont we 💝')" style="position:relative;">
+      <img src="/images/foto3.png" alt="Memory 3" class="event-img">
+      <p>🌸 stole eros bike helmet lol</p>
+    </div>
+
+  </div>
+
+  <div id="dialogOverlay" class="dialog-overlay"></div>
+  <div id="noteDialog" class="note-dialog">
+    <span id="closeDialog" class="close-btn">&times;</span>
+    <p id="noteContent"></p>
+  </div>
+
+  <audio id="clickSound" src="/sounds/pop.mp3"></audio>
+</div>
+
+<script src="/main.js"></script>
+</body>
+</html>
